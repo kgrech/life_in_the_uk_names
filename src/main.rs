@@ -1,7 +1,7 @@
 use std::collections::{HashMap, HashSet};
 use std::fmt::{Display, Formatter};
 use std::fs::File;
-use std::io;
+use std::{env, io};
 use std::io::Read;
 use rand::Rng;
 use serde::Deserialize;
@@ -43,10 +43,10 @@ impl Test {
         }
     }
 
-    pub fn next_question(&self) -> Question {
+    pub fn next_question(&self, topic: Option<&str>) -> Question {
         let mut rng = rand::thread_rng();
         let idx = rng.gen_range(0..self.professions.len());
-        let topic = &self.professions[idx];
+        let topic = topic.unwrap_or_else(|| &self.professions[idx]);
 
         let mut rng = rand::thread_rng();
 
@@ -102,13 +102,20 @@ impl<'a> Question<'a> {
 
 
 fn main() {
+    let args: Vec<String> = env::args().collect();
+    let topic = args.get(1).map(|s| s.as_str());
+
     let test = Test::new();
+    println!("List of topics");
+    for (k, v) in &test.data {
+        println!("{k}: {}", v.len());
+    }
 
     let mut correct = 0u32;
     let mut total = 0u32;
 
     loop {
-        let question = test.next_question();
+        let question = test.next_question(topic);
         println!("{question}");
 
         print!("Answer: ");
