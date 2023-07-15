@@ -1,10 +1,10 @@
 use std::collections::{HashMap, HashSet};
-use std::fmt::{Display, Formatter};
 use std::fs::File;
-use std::{env, io};
+use std::io;
 use std::io::Read;
 use rand::Rng;
 use serde::Deserialize;
+use clap::Parser;
 
 #[derive(Debug, Deserialize, Eq, PartialOrd, PartialEq, Hash)]
 struct Person {
@@ -43,7 +43,7 @@ impl Test {
         }
     }
 
-    pub fn next_question(&self, topic: Option<&str>) -> Question {
+    pub fn next_question(&self, topic: Option<&str>, reverse: bool) -> Question {
         let mut rng = rand::thread_rng();
         let idx = rng.gen_range(0..self.professions.len());
         let topic = topic.unwrap_or_else(|| &self.professions[idx]);
@@ -53,37 +53,55 @@ impl Test {
         let persons = self.data.get(topic).unwrap();
         let answers_num = std::cmp::min(4, persons.len());
 
-        let mut answers = HashSet::new();
+        let mut texts = HashSet::new();
+        let mut answers = Vec::new();
         while answers.len() < answers_num {
             let idx = rng.gen_range(0..persons.len());
-            answers.insert(&persons[idx]);
+            if !texts.contains(persons[idx].text.as_str()) {
+                texts.insert(persons[idx].text.as_str());
+                answers.push(&persons[idx]);
+            }
         }
-        let answers = answers.into_iter().collect::<Vec<_>>();
+
         let expected_answer = rng.gen_range(0..answers_num);
         Question {
             answers,
-            expected_answer
+            expected_answer,
+            reverse
         }
     }
 }
 
 pub struct Question<'a> {
     answers: Vec<&'a Person>,
-    expected_answer: usize
+    expected_answer: usize,
+    reverse: bool,
 }
 
-impl<'a> Display for Question<'a> {
-    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
-        writeln!(f, "----------------------------------------------")?;
-        writeln!(f, "{}", self.answers[self.expected_answer].text)?;
-        for i in 0..self.answers.len() {
-            writeln!(f, "\t{}. {}", i + 1, self.answers[i].name)?;
-        }
-        Ok(())
-    }
-}
 
 impl<'a> Question<'a> {
+
+    pub fn print(&self, by_click: bool) {
+        println!( "----------------------------------------------");
+        if self.reverse {
+            println!( "{}", self.answers[self.expected_answer].name);
+        } else {
+            println!("{}", self.answers[self.expected_answer].text);
+        }
+        if by_click {
+            let mut input_line = String::new();
+            io::stdin()
+                .read_line(&mut input_line)
+                .expect("Failed to read line");
+        }
+        for i in 0..self.answers.len() {
+            if self.reverse {
+                println!( "\t{}. {}", i + 1, self.answers[i].text);
+            } else {
+                println!( "\t{}. {}", i + 1, self.answers[i].name);
+            }
+        }
+    }
 
     pub fn answer(&self, answer: usize) -> bool {
         let correct = self.expected_answer == answer - 1;
@@ -91,7 +109,7 @@ impl<'a> Question<'a> {
         if correct {
             println!("-- CORRECT --");
         } else {
-            println!("-- INCORRECT --");
+            println!("\x1b[93m-- INCORRECT --\x1b[0m");
         }
         for answer in &self.answers {
             println!("> {}: {}", answer.name, answer.text);
@@ -100,10 +118,21 @@ impl<'a> Question<'a> {
     }
 }
 
+#[derive(Parser, Debug)]
+pub struct Args {
+    #[arg(short, long)]
+    topic: Option<String>,
+    #[arg(short, long)]
+    reverse: bool,
+    #[arg(short, long)]
+    by_click: bool
+}
+
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
-    let topic = args.get(1).map(|s| s.as_str());
+    let args: Args = Args::parse();
+
+    let topic = args.topic.as_ref().map(|s| s.as_str());
 
     let test = Test::new();
     println!("List of topics");
@@ -115,8 +144,8 @@ fn main() {
     let mut total = 0u32;
 
     loop {
-        let question = test.next_question(topic);
-        println!("{question}");
+        let question = test.next_question(topic, args.reverse);
+        question.print(args.by_click);
 
         print!("Answer: ");
         let mut input_line = String::new();
@@ -132,8 +161,11 @@ fn main() {
             correct += 1;
         }
         total += 1;
+
+        io::stdin()
+            .read_line(&mut input_line)
+            .expect("Failed to read line");
+        print!("{}[2J", 27 as char);
         println!("Correct answers {}/{}: {:.2}%", correct, total, correct as f32 / total as f32 * 100.0);
-        println!();
-        println!();
     }
 }
