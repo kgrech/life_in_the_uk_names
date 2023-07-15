@@ -1,0 +1,542 @@
+[
+ {
+   "name": "Isaac Newton",
+   "years": "1643-1727",
+   "profession": "Inventor",
+   "text": "Born in Lincolnshire, studien in Cambridge. Written Philosophiae Naturalis"
+ },
+ {
+   "name": "Robert Burns",
+   "years": "1759-96",
+   "profession": "Writer",
+   "text": "'The Bard', scottish poet. Auld Lang Syne, New Year/Hogmanay song"
+ },
+ {
+   "name": "Richard Arkwright",
+   "years": "1732-92",
+   "profession": "Inventor",
+   "text": "Used to be a barber, then improved carding machine using horses and then steam"
+ },
+ {
+   "name": "Sake Dean Mahomet",
+   "years": "1759-1851",
+   "profession": "Inventor",
+   "text": "Grown in Bengal, married Irish girl, open the first curry place called Hindostane Coffie Housed"
+ },
+ {
+   "name": "Isambard Kingdom Brunel",
+   "years": "1806-59",
+   "profession": "Architect",
+   "text": "From Portsmouth, built tunnels, bridges, great western railway, Clifron Bridge"
+ },
+ {
+   "name": "Florence Nightingale",
+   "years": "1820-1910",
+   "profession": "Politician",
+   "text": "Worked as nurse during Crimean War, establised Nightingale nursing school"
+ },
+ {
+   "name": "Emmeline Pankhurst",
+   "years": "1858-1928",
+   "profession": "Politician",
+   "text": "Born in Manchester, set up Women's Franchise League in 1889, fought for woman right to vote. In 1903 founded Woman's Social Political Union"
+ },
+ {
+   "name": "Rudyard Kipling",
+   "years": "1865-1936",
+   "profession": "Writer",
+   "text": "Born in India, Nobel Prize in 1907. Written Just So Stories and The Jungle Book"
+ },
+ {
+   "name": "Clement Attle",
+   "years": "1883-1967",
+   "profession": "Politician",
+   "text": "Oxford University. Labor Prime Minister 1945-1951. Nationalized coal and steel, founded NHS, implemented Beveridges plans"
+ },
+ {
+   "name": "William Beveridge",
+   "years": "1879-1963",
+   "profession": "Politician",
+   "text": "1942, Social Insurance and Allied Services report. Great evils: Want, Disease, Ignorance, Squalor. Basis of  modern welfare state"
+ },
+ {
+   "name": "Richard Butler",
+   "years": "1902-82",
+   "profession": "Politician",
+   "text": "1944, Education Act - free secondary education in England and Wales"
+ },
+ {
+   "name": "Dylan Thomas",
+   "years": "1914-53",
+   "profession": "Writer",
+   "text": "Welsh Poet, performed in public and BBC. Writen Unver Milk Wood and Do Not Go Gentle into That Good Night. Died 39 in NY"
+ },
+ {
+   "name": "John Logied Baird",
+   "years": "1888-1946",
+   "profession": "Inventor",
+   "text": "Invented the TV. First broadcast between London and Glasgow in 1932"
+ },
+ {
+   "name": "Robert Watson-Watt",
+   "years": "1892-1973",
+   "profession": "Inventor",
+   "text": "Invented Radar in 1935"
+ },
+ {
+   "name": "Bernard Lovell",
+   "years": "1913-2012",
+   "profession": "Inventor",
+   "text": "Invented Radio telescope, built at  Jodrell Bank in Cheshire"
+ },
+ {
+   "name": "John Macleod",
+   "years": "1876-1935",
+   "profession": "Inventor",
+   "text": "Co-discovered of insulin"
+ },
+ {
+   "name": "Francis Crick",
+   "years": "1916-2004",
+   "profession": "Inventor",
+   "text": "Opened DNA"
+ },
+ {
+   "name": "Frank Whittle",
+   "years": "1907-96",
+   "profession": "Inventor",
+   "text": "Invented Jet Engine"
+ },
+ {
+   "name": "Christopher Cockerell",
+   "years": "1910-99",
+   "profession": "Inventor",
+   "text": "Inveted hovercraft, 1950"
+ },
+ {
+   "name": "James Goodfellow",
+   "years": "1937-",
+   "profession": "Inventor",
+   "text": "Invetned cash ATM"
+ },
+ {
+   "name": "Robert Edwards",
+   "years": "1925-2013",
+   "profession": "Inventor",
+   "text": "IVF therapy, first test tube baby 1978"
+ },
+ {
+   "name": "Patric Steptoe",
+   "years": "1913-88",
+   "profession": "Inventor",
+   "text": "IVF therapy, first test tube baby 1978"
+ },
+ {
+   "name": "Ian Wilmut",
+   "years": "1925-2013",
+   "profession": "Inventor",
+   "text": "Clonned Dolly in 1996"
+ },
+ {
+   "name": "Keith Campbell",
+   "years": "1954-2012",
+   "profession": "Inventor",
+   "text": "Clonned Dolly in 1996"
+ },
+ {
+   "name": "Peter Mansfield",
+   "years": "1933-2017",
+   "profession": "Inventor",
+   "text": "Co inventor of MRI (magnetic resonance imaging)"
+ },
+ {
+   "name": "Mary Peters",
+   "years": "1939-",
+   "profession": "Athlete",
+   "text": "Won 1972 Olympic in pentathlon, 1972. Promoted sport in Northern Ireland. Dame of British Empire in 2000"
+ },
+ {
+   "name": "Roald Dahl",
+   "years": "1916-90",
+   "profession": "Writer",
+   "text": "Born in Wales, author of child books such as Charlie and the Chocolate Factory and George's Marvellous Medicine"
+ },
+ {
+   "name": "Roger Bannister",
+   "years": "1929-2018",
+   "profession": "Athlete",
+   "text": "First man to run a mile under 4 mins, 1954"
+ },
+ {
+   "name": "Jackie Steward",
+   "years": "1939-",
+   "profession": "Athlete",
+   "text": "Scottish driver, won Formula 1 3 times"
+ },
+ {
+   "name": "Booby Moore",
+   "years": "1941-93",
+   "profession": "Athlete",
+   "text": "Captian of English Football team, won World Cup in 1966"
+ },
+ {
+   "name": "Ian Botham",
+   "years": "1955-",
+   "profession": "Athlete",
+   "text": "Captian of English Cricket team, got number of records"
+ },
+ {
+   "name": "Jayne Torvill",
+   "years": "1957 -",
+   "profession": "Athlete",
+   "text": "Gold medal in ice dancing, 1984 Olympic"
+ },
+ {
+   "name": "Chirstopher Dean",
+   "years": "1958 -",
+   "profession": "Athlete",
+   "text": "Gold medal in ice dancing, 1984 Olympic"
+ },
+ {
+   "name": "Steve Redgrave",
+   "years": "1962 - ",
+   "profession": "Athlete",
+   "text": "Won 5 Olympics in rowing"
+ },
+ {
+   "name": "Tanni Grey-Thompson",
+   "years": "1969 -",
+   "profession": "Athlete",
+   "text": "Whellcheir athlete, won 16 paralymic meals (11 gold) in 5 paralymic games. 30 worlds records"
+ },
+ {
+   "name": "Fransis Chichester",
+   "years": "",
+   "profession": "Athlete",
+   "text": "First person to sail across the world singlehanded, 1966/67"
+ },
+ {
+   "name": "Robin Knox-Johnston",
+   "years": "",
+   "profession": "Athlete",
+   "text": "First person to sail across the world singlehanded without stopping, 1968"
+ },
+ {
+   "name": "Ellen MacArthur",
+   "years": "1976 -",
+   "profession": "Athlete",
+   "text": "2004, fastest person to sail across the world singlehanded"
+ },
+ {
+   "name": "Chris Hoy",
+   "years": "1976 -",
+   "profession": "Athlete",
+   "text": "Scottish cyclist, 6 gold and 1 silver olympic medals. 11 titles"
+ },
+ {
+   "name": "David Weir",
+   "years": "1979 -",
+   "profession": "Athlete",
+   "text": "Whellcheir athlete, won 6 paralymic gold meals in 6 paralymic games. Won London Marathon 6 times"
+ },
+ {
+   "name": "Bradley Wiggins",
+   "years": "1980 -",
+   "profession": "Athlete",
+   "text": "Cyclist, first Brithon to win Tour de France in 2012. 8 gold Olympic medals"
+ },
+ {
+   "name": "Jessica Ennis-Hill",
+   "years": "1986-",
+   "profession": "Athlete",
+   "text": "2012 olympic gold in heptathlon, silver in 2016"
+ },
+ {
+   "name": "Andy Murray",
+   "years": "1987-",
+   "profession": "Athlete",
+   "text": "Scottish tennis player, won US open in 2012. First british man to win Grand Slam since 1936. 2013, 2016 won Wimbeldon. 2016 Olympics gold"
+ },
+ {
+   "name": "Ellie Simmonds",
+   "years": "1994-",
+   "profession": "Athlete",
+   "text": "Paralympian who won gold in swimming in 2008,2012,2016"
+ },
+ {
+   "name": "Henry Purcell",
+   "years": "1659-95",
+   "profession": "Composer",
+   "text": "Organist in Westminster Abbey. Wrote church music, operas"
+ },
+ {
+   "name": "George Frederic Handel",
+   "years": "1685-1759",
+   "profession": "Composer",
+   "text": "Water Music for  King George I, Music for Royal Fireworks for George II, Wrote Messiah, easter song"
+ },
+ {
+   "name": "Gustav Holst",
+   "years": "1874-1934",
+   "profession": "Composer",
+   "text": "Composed the Planets, I vow to thee my country"
+ },
+ {
+   "name": "Edward Elgar",
+   "years": "1857-1934",
+   "profession": "Composer",
+   "text": "Born in Worcester, written Pomp and Cicrumstance Marches. March #1 is played at last night of promsat the Royal Albert Hall"
+ },
+ {
+   "name": "Ralph Vaughan Williamns",
+   "years": "1872-1958",
+   "profession": "Composer",
+   "text": "Wrote music for orchestras and choirs influenced by traditional folk music"
+ },
+ {
+   "name": "William Walton",
+   "years": "1902-83",
+   "profession": "Composer",
+   "text": "Wide range of music, marches for King George VI and Queen Elizabeth II. Facade (ballet) and Belshazzar's Feast"
+ },
+ {
+   "name": "Benjamin Britten",
+   "years": "1913-76",
+   "profession": "Composer",
+   "text": "Operas Peter Grimes and Billy Budd. A Young Person's Guide to Orchestra"
+ },
+ {
+   "name": "Gilbert and Sollivan",
+   "years": "",
+   "profession": "Writer",
+   "text": "Comic operas, HMS Pinafore, The Pirates of Penzance and the Mikado"
+ },
+ {
+   "name": "Andrew Lloyd Webber",
+   "years": "",
+   "profession": "Composer",
+   "text": "Music for Jesus Christ Super star, Cats and Phantom of the Opera"
+ },
+ {
+   "name": "Laurence Oliver",
+   "years": "",
+   "profession": "Artist",
+   "text": "Was best known for roles in Shakespeare plays, annual award is named after him"
+ },
+ {
+   "name": "Thomas Gainsborough",
+   "years": "1727-88",
+   "profession": "Artist",
+   "text": "Portrait Painter, painted people in  country or garden"
+ },
+ {
+   "name": "David Allan",
+   "years": "1744-96",
+   "profession": "Artist",
+   "text": "Scottish portrait painter. Famous work: The origin of painting"
+ },
+ {
+   "name": "Josheph Turner",
+   "years": "1775-1851",
+   "profession": "Artist",
+   "text": "Landscape painter in modern style. Raised the profile of landscape painting"
+ },
+ {
+   "name": "Holman Hunt, Dante Gabriel Rossetti and John Millais",
+   "years": "",
+   "profession": "Artist",
+   "text": "The pre-raphaelites, detailed pictures in bright colours"
+ },
+ {
+   "name": "John Lavery",
+   "years": "1856-1941",
+   "profession": "Artist",
+   "text": "Northen Irish portrait painter. Painted the Royal Family"
+ },
+ {
+   "name": "Henry Moore",
+   "years": "1898-1986",
+   "profession": "Artist",
+   "text": "Sculptor and artist. Large Bronze abstract sculptures"
+ },
+ {
+   "name": "John Petters",
+   "years": "1914-91",
+   "profession": "Artist",
+   "text": "Welsh artist, best known for engraving and stained glass"
+ },
+ {
+   "name": "Lucian Freud",
+   "years": "1922-2011",
+   "profession": "Artist",
+   "text": "German born portrait painter"
+ },
+ {
+   "name": "David Hockney",
+   "years": "1937-",
+   "profession": "Artist",
+   "text": "Contributor to pop-art movement in 1960"
+ },
+ {
+   "name": "Christopher Wrenn",
+   "years": "",
+   "profession": "Architect",
+   "text": "British version of the ornate styles in st Paul's"
+ },
+ {
+   "name": "Robert Adam",
+   "years": "",
+   "profession": "Architect",
+   "text": "Scottish architect, decorated Dumfries House, Royal Crescent"
+ },
+ {
+   "name": "Edwin Lutyens",
+   "years": "",
+   "profession": "Architect",
+   "text": "New Delhi and then Cenotaph in Whitehall (place for rememberance day)"
+ },
+ {
+   "name": "Jane Austen",
+   "years": "1775-1817",
+   "profession": "Writer",
+   "text": "English novelist, written Pride and Prejudice and Sense of Sensibility. Many novels made into films"
+ },
+ {
+   "name": "Charles Dickens",
+   "years": "1812-70",
+   "profession": "Writer",
+   "text": "Wrote Oliver Twist and Great Expectations. Scroodge and Mr Micawber"
+ },
+ {
+   "name": "Robert Louis Stevenson",
+   "years": "1850-94",
+   "profession": "Writer",
+   "text": "Wrote Treasure Island, Kidnapped and Dr Jekyll and Mr Hyde"
+ },
+ {
+   "name": "Thomas Hardy",
+   "years": "1840-1928",
+   "profession": "Writer",
+   "text": "Novels on rural society such asFar from Madding Crowd and Jude the Obscure"
+ },
+ {
+   "name": "Evelyn Waugh",
+   "years": "1903-66",
+   "profession": "Writer",
+   "text": "Satirical Novels writer, Decline and Fall, Scoop. Best known for Brideshead Revisited"
+ },
+ {
+   "name": "Kingsley Amis",
+   "years": "1922-95",
+   "profession": "Writer",
+   "text": "Wrote more than 20 novels, including Lucky Jim"
+ },
+ {
+   "name": "Grapham Greene",
+   "years": "1904-91",
+   "profession": "Writer",
+   "text": "novels by his religious beliefs. The Heart of the matter, The Honorary Consul, Brighton Rock and Our an in Havanna"
+ },
+ {
+   "name": "John Milton",
+   "years": "",
+   "profession": "Writer",
+   "text": "protestant poet, written Paradise Lost"
+ },
+ {
+   "name": "William Wordsworth",
+   "years": "",
+   "profession": "Writer",
+   "text": "poet, written about nature, e.g. the daffodils"
+ },
+ {
+   "name": "Walter Scott",
+   "years": "",
+   "profession": "Writer",
+   "text": "Written poems and novells inspired by Scotland"
+ },
+ {
+   "name": "Robet Browning",
+   "years": "",
+   "profession": "Writer",
+   "text": "Poet, written Home Thoughts from Abroad"
+ },
+ {
+   "name": "Lord Byron",
+   "years": "",
+   "profession": "Writer",
+   "text": "Poet, writen She walks in Beauty"
+ },
+ {
+   "name": "William Blake",
+   "years": "",
+   "profession": "Writer",
+   "text": "Poet, written The Tyger"
+ },
+ {
+   "name": "Wilfred Owen",
+   "years": "",
+   "profession": "Writer",
+   "text": "Poet, written Doomed Youth"
+ },
+ {
+   "name": "Alfred Hichcock",
+   "years": "",
+   "profession": "Director",
+   "text": "Directed film The 39 Steps, 1935"
+ },
+ {
+   "name": "David Lean",
+   "years": "",
+   "profession": "Director",
+   "text": "Directed film Brief Encounter, 1945, Lawrance of Arabia, 1962"
+ },
+ {
+   "name": "Carol Reed",
+   "years": "",
+   "profession": "Director",
+   "text": "Directed film The Third Man, 1949"
+ },
+ {
+   "name": "Frank Launder",
+   "years": "",
+   "profession": "Director",
+   "text": "Directed film Belles of St Trinian's, 1954"
+ },
+ {
+   "name": "Ken Russel",
+   "years": "",
+   "profession": "Director",
+   "text": "Directed film Women in Love, 1969"
+ },
+ {
+   "name": "Nicolas Roeg",
+   "years": "",
+   "profession": "Director",
+   "text": "Directed film Don't Look Now, 1973"
+ },
+ {
+   "name": "Hugh Hudson",
+   "years": "",
+   "profession": "Director",
+   "text": "Directed film Chariots of Fire, 1981"
+ },
+ {
+   "name": "Roland Joffe",
+   "years": "",
+   "profession": "Director",
+   "text": "Directed film The Killing Fields, 1984"
+ },
+ {
+   "name": "Mike Newell",
+   "years": "",
+   "profession": "Director",
+   "text": "Directed film Four Weddings and a Funeral, 1994"
+ },
+ {
+   "name": "Kevin MacDonald",
+   "years": "",
+   "profession": "Director",
+   "text": "Directed film Touching the void, 2003"
+ }
+]
