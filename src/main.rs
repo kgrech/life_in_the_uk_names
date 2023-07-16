@@ -8,15 +8,14 @@ use clap::Parser;
 
 #[derive(Debug, Deserialize, Eq, PartialOrd, PartialEq, Hash)]
 struct Person {
-    name: String,
-    years: String,
-    profession: String,
+    item: String,
+    category: String,
     text: String
 }
 
 struct Test {
     data: HashMap<String, Vec<Person>>,
-    professions: Vec<String>,
+    categories: Vec<String>,
 }
 
 impl Test {
@@ -30,23 +29,23 @@ impl Test {
 
         let mut data = HashMap::new();
         for person in json {
-            if !data.contains_key(&person.profession) {
-                data.insert(person.profession.clone(), vec![]);
+            if !data.contains_key(&person.category) {
+                data.insert(person.category.clone(), vec![]);
             }
-            data.get_mut(&person.profession).unwrap().push(person);
+            data.get_mut(&person.category).unwrap().push(person);
         }
 
-        let professions = data.keys().map(|s| s.clone()).collect();
+        let categories = data.keys().map(|s| s.clone()).collect();
         Self {
             data,
-            professions,
+            categories,
         }
     }
 
     pub fn next_question(&self, topic: Option<&str>, reverse: bool) -> Question {
         let mut rng = rand::thread_rng();
-        let idx = rng.gen_range(0..self.professions.len());
-        let topic = topic.unwrap_or_else(|| &self.professions[idx]);
+        let idx = rng.gen_range(0..self.categories.len());
+        let topic = topic.unwrap_or_else(|| &self.categories[idx]);
 
         let mut rng = rand::thread_rng();
 
@@ -84,7 +83,7 @@ impl<'a> Question<'a> {
     pub fn print(&self, by_click: bool) {
         println!( "----------------------------------------------");
         if self.reverse {
-            println!( "{}", self.answers[self.expected_answer].name);
+            println!( "{}", self.answers[self.expected_answer].item);
         } else {
             println!("{}", self.answers[self.expected_answer].text);
         }
@@ -98,7 +97,7 @@ impl<'a> Question<'a> {
             if self.reverse {
                 println!( "\t{}. {}", i + 1, self.answers[i].text);
             } else {
-                println!( "\t{}. {}", i + 1, self.answers[i].name);
+                println!( "\t{}. {}", i + 1, self.answers[i].item);
             }
         }
     }
@@ -112,7 +111,7 @@ impl<'a> Question<'a> {
             println!("\x1b[93m-- INCORRECT --\x1b[0m");
         }
         for answer in &self.answers {
-            println!("> {}: {}", answer.name, answer.text);
+            println!("> {}: {}", answer.item, answer.text);
         }
         correct
     }
