@@ -125,6 +125,11 @@
  "text": "Co inventor of MRI (magnetic resonance imaging)"
 },
 {
+ "item": "William Caxton",
+ "category": "Inventor",
+ "text": "First person to produce books using a printing press"
+},
+{
  "item": "Mary Peters",
  "category": "Athlete",
  "text": "Won 1972 Olympic in pentathlon, 1972. Promoted sport in Northern Ireland. Dame of British Empire in 2000"
@@ -133,6 +138,11 @@
  "item": "Roald Dahl",
  "category": "Writer",
  "text": "Born in Wales, author of child books such as Charlie and the Chocolate Factory and George's Marvellous Medicine"
+},
+{
+ "item": "George Eliot",
+ "category": "Writer",
+ "text": "Novelist and poet of the Victorian era. Pen name of Mary Ann Evans."
 },
 {
  "item": "Roger Bannister",
@@ -218,6 +228,11 @@
  "item": "Ellie Simmonds",
  "category": "Athlete",
  "text": "Paralympian who won gold in swimming in 2008,2012,2016"
+},
+{
+ "item": "Kelly Holmes",
+ "category": "Athlete",
+ "text": "Won 2 gold medals in the 2003 Olympic games for running"
 },
 {
  "item": "Henry Purcell",
@@ -313,6 +328,21 @@
  "item": "David Hockney",
  "category": "Artist",
  "text": "Contributor to pop-art movement in 1960"
+},
+{
+ "item": "Thomas Chippendale",
+ "category": "Artist",
+ "text": "Cabinet-maker in London, designing furniture in the mid-Georgian, English Rococo, and Neoclassical styles"
+},
+{
+ "item": "Clarice Cliff",
+ "category": "Artist",
+ "text": "Ceramic artist and designer"
+},
+ {
+ "item": "Terence Conran",
+ "category": "Artist",
+ "text": "Designer, restaurateur, retailer and writer, founded the Design Museum in Shad Thames"
 },
 {
  "item": "Christopher Wrenn",
